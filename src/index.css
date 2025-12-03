@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-abeeze: "ABeeZee", sans-serif;
+  --second-DmSans: "DM Sans", sans-serif;
+  --third-roboto: "Roboto", sans-serif;
+  --font3-taprom: "Taprom", sans-serif;
+  --font-doppio: "Doppio One", sans-serif;
+  --font5-abhaya: "Abhaya Libre", sans-serif;
+  --font6-montserrat: "Montserrat", sans-serif;
+}
+body {
+  background-color: #131218;
+}
+html,
+body {
+  overflow-x: clip;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (min-width: 768px) and (max-width: 870px) {
+  .card {
+    width: 360px;
+  }
+}
+
+@media (max-width: 1039px) {
+  .card2 {
+    display: none;
+  }
+  .card3 {
+    display: flex;
+  }
+}
+
+@media (min-width: 1039px) {
+  .card2 {
+    display: flex;
+  }
+  .card3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card3 {
+    display: none;
+  }
+}
+
+.ant-pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.ant-pagination-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: transparent !important;
+  border: none !important;
+  font-family: var(--font-abeeze);
+  transition: background-color 0.2s;
+}
+
+.ant-pagination-item a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ant-pagination-item-active {
+  border: 2px solid rgba(234, 131, 5, 0.69) !important;
+  background-color: transparent !important;
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-item:hover {
+  background-color: #5a5960 !important;
+}
+
+.ant-pagination-item:hover a {
+  color: white !important;
+}
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover {
+  background-color: #5a5960;
+}
+.horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+
+
+
+
