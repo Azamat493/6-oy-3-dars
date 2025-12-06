@@ -4,7 +4,7 @@ import Rectangle37 from "../../assets/images/Rectangle37.png";
 import card1 from "../../assets/images/card1.png";
 import card2 from "../../assets/images/card2.png";
 import card3 from "../../assets/images/card3.png";
-import chat from "../../assets/images/chat.png";
+import Chat from "../../assets/images/Chat.png";
 
 const Service = () => {
   return (
@@ -94,7 +94,7 @@ const Service = () => {
       <div className="relative z-10 max-w-[1152px] m-auto w-full">
         <div className="flex items-center justify-center flex-wrap gap-4 px-8 py-6">
           <div className="absolute top-[-2%] sm:top-[-5%] right-2">
-            <img src={chat} alt="" />
+            <img src={Chat} alt="" />
           </div>
           <div className="relative hover:shadow-[0_4px_20px_0_rgba(234,131,5,0.6)] overflow-hidden w-[220px] h-[400px] bg-[#3b3a40]">
             <img src={card1} alt="" />
