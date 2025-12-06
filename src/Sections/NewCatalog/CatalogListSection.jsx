@@ -88,7 +88,7 @@ const CatalogListSection = () => {
   };
 
   return (
-    <section className="py-16">
+    <section className="py-10">
       <div className="max-w-[1152px] mx-auto px-4">
         <div className="flex flex-col flex-wrap sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
           <div className="flex gap-6">
@@ -252,7 +252,7 @@ const CatalogListSection = () => {
           {currentProducts.map((product) => (
             <div
               key={product.id}
-              className="flex flex-col lg:flex-row gap-3 p-4"
+              className="flex flex-col lg:flex-row gap-3 pl-0 lg:pl-4"
             >
               <div className="lg:w-1/4 relative">
                 <img
@@ -262,9 +262,10 @@ const CatalogListSection = () => {
                 />
               </div>
 
-              <div className="p-5 relative h-[360px] bg-[rgba(255,255,255,0.13)] rounded-[0_0_40px_0] flex flex-col w-full lg:w-auto">
-                <div className="horizontal-scroll">
-                  <div className="flex flex-nowrap min-w-max justify-between gap-3 lg:gap-3 items-start lg:items-start">
+              <div className="p-5 relative h-[360px] horizontal-scroll bg-[rgba(255,255,255,0.13)] rounded-[0_0_40px_0] flex flex-col w-full lg:w-auto">
+            
+                  
+                  <div className="flex   flex-nowrap min-w-max justify-between gap-3 lg:gap-3 items-start lg:items-start">
                     <div className="w-full  lg:w-auto">
                       <h3 className="font-normal text-sm leading-[250%] text-white font-abeeze">
                         {product.category}
@@ -300,7 +301,7 @@ const CatalogListSection = () => {
                           />
                         ))}
                       </div>
-                      <div className="mt-2">
+                      <div className="mt-2 ">
                         {product.status === "в наличии" ? (
                           <span className="font-normal text-sm leading-[250%] text-[rgba(255,214,0,0.6)] font-abeeze">
                             {product.status}
@@ -321,7 +322,7 @@ const CatalogListSection = () => {
                       </span>
                     </div>
                   </div>
-                </div>
+                
               </div>
             </div>
           ))}

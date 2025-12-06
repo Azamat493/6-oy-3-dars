@@ -4,7 +4,7 @@ import Guitar from "../../assets/images/Guitar.png";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="min-w-[242px] rounded-lg overflow-hidden relative flex flex-col mx-2 flex-shrink-0">
+    <div className="min-w-[242px]  rounded-lg overflow-hidden relative flex flex-col mx-2 flex-shrink-0">
       <div className="absolute bottom-0 left-0 w-full h-[60%] bg-[#3b3a40] z-0"></div>
       <div className="relative z-10 flex flex-col items-start">
         <img
@@ -181,7 +181,7 @@ const CatalogGrid = () => {
   };
 
   return (
-    <div className="w-full mb-10 max-w-[1152px] mt-5 mx-auto px-4">
+    <div className="w-full  mb-10 max-w-[1152px] mt-5 mx-auto px-4">
       <div className="flex flex-wrap flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
         <div className="flex gap-6">
           <span className="font-normal text-lg text-white font-abeeze">

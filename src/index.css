@@ -2,7 +2,7 @@
 
 @theme {
   --font-abeeze: "ABeeZee", sans-serif;
-  --second-DmSans: "DM Sans", sans-serif;
+  --font-second-DmSans: "DM Sans", sans-serif;
   --third-roboto: "Roboto", sans-serif;
   --font3-taprom: "Taprom", sans-serif;
   --font-doppio: "Doppio One", sans-serif;
@@ -97,6 +97,8 @@ html {
 .horizontal-scroll {
   overflow-x: auto;
   overflow-y: hidden;
+   scrollbar-gutter: stable; 
+  padding-bottom: 8px
 }
 
 .horizontal-scroll::-webkit-scrollbar {

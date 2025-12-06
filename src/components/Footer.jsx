@@ -254,8 +254,27 @@ const Footer = () => {
               class="max-w-full h-auto rounded-lg shadow-lg w-full max-w-[300px] sm:max-w-[400px]"
             />
           </div>
-          <a href="#top" className="fixed bottom-8  z-10 right-8">
-            <img src={strelka} alt="" className="w-[108px] h-[108px]" />
+          <a
+            href="#top"
+            className="
+    fixed
+    bottom-4 right-4
+    z-10
+    md:bottom-6 md:right-6
+    lg:bottom-8 lg:right-8
+  "
+          >
+            <img
+              src={strelka}
+              alt="up"
+              className="
+      w-[45px] h-[45px]            /* mobile / default */
+      sm:w-[60px] sm:h-[60px]     /* >=640px */
+      md:w-[80px] md:h-[80px]     /* >=768px */
+      lg:w-[108px] lg:h-[108px]   /* >=1024px */
+      block
+    "
+            />
           </a>
         </div>
       </div>

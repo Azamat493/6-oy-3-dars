@@ -145,8 +145,8 @@ const Header = () => {
                 { name: "Главная", path: "/" },
                 { name: "Каталог", path: "/catalog" },
                 { name: "Новый каталог", path: "/newcatalog" },
-                { name: "О нас", path: "/about" },
-                { name: "Доставка", path: "/delivery" },
+                { name: "Товары", path: "/products" },
+                { name: "Обслуживание", path: "/service" },
                 { name: "Отзывы", path: "/reviews" },
                 { name: "Обучение", path: "/training" },
                 { name: "Контакты", path: "/contacts" },
@@ -179,7 +179,7 @@ const Header = () => {
         </div>
       </div>
       <nav className="hidden md:block px-6 pb-4">
-        <ul className="flex justify-center gap-6 uppercase tracking-wider font-normal text-sm text-center text-white font-abeeze">
+        <ul className="flex justify-center flex-wrap gap-6 uppercase tracking-wider font-normal text-sm text-center text-white font-abeeze">
           <li>
             <NavLink
               to="/"
@@ -224,7 +224,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/products"
               className={({ isActive }) =>
                 `transition ${
                   isActive
@@ -233,12 +233,12 @@ const Header = () => {
                 }`
               }
             >
-              О нас
+              Товары
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/delivery"
+              to="/service"
               className={({ isActive }) =>
                 `transition ${
                   isActive
@@ -247,7 +247,7 @@ const Header = () => {
                 }`
               }
             >
-              Доставка
+              Обслуживание
             </NavLink>
           </li>
           <li>
